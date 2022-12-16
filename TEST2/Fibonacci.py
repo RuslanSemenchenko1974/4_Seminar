@@ -15,10 +15,10 @@ def fibonacci_1(n):
     if n == 2:
         return -1
     else:
-        return -fibonacci_(n - 1) + fibonacci(n - 2)
+        return -fibonacci_1(n - 1) + fibonacci(n - 2)
 
 
 us_namber = function()
-print(f'{us_namber} : {fibonacci(us_namber)}')
+print(f'{us_namber} : {fibonacci_1(us_namber)}')
 for i in range(us_namber):
-    print(fibonacci(us_namber - i))
+    print(fibonacci_1(us_namber - i))
